@@ -1,30 +1,12 @@
 const express = require('express');
-const path = require('path');
+var path = require('path')
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000; // Example port number
 
-app.use(express.static(path.join(__dirname)));
+// Serve HTML files from the same directory as server.js
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/quiz1', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-app.get('/quiz1/profile', (req, res) => {
-  res.sendFile(path.join(__dirname, 'profile.html'));
-});
-
-app.get('/quiz1/hometown', (req, res) => {
-  res.sendFile(path.join(__dirname,  'hometown.html'));
-});
-
-app.get('/quiz1/food', (req, res) => {
-  res.sendFile(path.join(__dirname, 'food.html'));
-});
-
-app.get('/quiz1/tourist', (req, res) => {
-  res.sendFile(path.join(__dirname,  'tourist.html'));
-});
-
+// Start the Express.js server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

@@ -3,7 +3,7 @@ const touristButton = document.getElementById('btnTourist');
 const foodButton = document.getElementById('btnFood');
 
 backButton.addEventListener('click', ()=>{
-    window.location.href = './homepage.html'
+    window.location.href = './index.html'
 });
 
 foodButton.addEventListener('click', ()=>{

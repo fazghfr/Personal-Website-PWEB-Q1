@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+}
+
+.gradient-class {
+    background: linear-gradient(to left, #ff5e01, #f5e050);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align children to the top */
+    align-items: center;
+}
+
+.title-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-text #cilegon{
+    margin-top: 28px; 
+    font-size: 88px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.title-text #quotes{
+    margin-top: 8px; 
+    font-size: 35px;
+    font-family: 'Lora', sans-serif;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.white-half-section {
+    background-color: rgb(262, 246, 246);
+    display: flex;
+    width: auto;
+    border-radius: 15px;
+    height: auto;
+    margin-top: 45px;
+    margin-left: 21%;
+    margin-right: 21%;
+    padding-bottom: 28px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.white-half-section .title{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 35px;
+}
+
+.white-half-section .description{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 35px;
+}
+
+.description .generaldesc{
+    font-family: 'Lora', sans-serif;
+    text-align: justify;
+}
+
+.img-container{
+    margin-top: 60px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.img-container .header{
+    width: 750px;
+    height: auto;
+}
+
+.img-container img {
+    height: 200px; /* Adjust the height to your desired value */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.godown {
+    --font-color: #323232;
+    --bg-color: #fff;
+    --main-color: #323232;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+.godown:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
